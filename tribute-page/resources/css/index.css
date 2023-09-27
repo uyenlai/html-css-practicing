@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1d1e26;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  background: #1d1e26;
+}
+
+.nav__item {
+  margin: 0 1.25rem;
+}
+
+.nav__item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.highlighted {
+  background: #8c111b;
+  padding: 1.25rem 4rem;
+  text-shadow: -1px 0px 0px #1d1e26, 1px 0px 0px #1d1e26, 0px -1px 0px #1d1e26,
+    0px 1px 0px #1d1e26;
+}
+
+#home {
+  width: 100vw;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.main__background-1,
+.main__background-2 {
+  background: linear-gradient(45deg, rgba(29, 30, 38, 0.7), transparent),
+    url("../images/image\ 3.png") top left/ cover no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.main__background-1 {
+  transform: rotateY(180deg);
+}
+
+.main__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24rem;
+  text-align: center;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+.main__content h1 {
+  font-size: 3.5rem;
+  text-shadow: -2px 2px #963323;
+}
+
+.main__content p {
+  margin-top: 0.5rem;
+}
+
+.main__content-arrow {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, -3%);
+  width: 36px;
+  height: 36px;
+  background: url("../images/chevron-down-solid.svg");
+  filter: opacity(30%);
+}
+
+#biography {
+  display: flex;
+  padding: 10rem;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.biography__content {
+  margin-right: 5rem;
+  min-width: 400px;
+}
+
+.biography__content h1 {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.biography__content p {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: justify;
+  max-width: 400px;
+}
+
+.biography__content p + p {
+  margin-top: 10px;
+}
+
+.biography__image {
+  width: 75%;
+  height: 350px;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.biography__image img {
+  width: 100%;
+  height: 100%;
+}
+
+#break-line {
+    height: 1px;
+    background-image: linear-gradient(to right, #fff, transparent);
+}
+
+#discography {
+  padding: 5rem;
+  width: 100vw;
+}
+
+#discography h1 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.discography__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.discography__card-container {
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.discography__card-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.discography__card-item {
+  width: 30%;
+  display: flex;
+  margin-right: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  box-shadow: 0px 1px 5px black;
+}
+
+.discography__card-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.card-item__info {
+  margin-right: 3rem;
+  width: 124px;
+  height: 124px;
+  min-height: 100px;
+  min-height: 100px;
+}
+
+.card-item__info img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-item__info p {
+    color: #fff;
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.card-item__content {
+    color: #fff;
+    width: 12rem;
+}
+
+.card-item__content h3 {
+    font-size: 0.8rem;
+}
+
+.card-item__content__list {
+    margin-top: 0.6rem;
+    padding-left: 0.85rem;
+}
+
+.card-item__content__list li {
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+
+#discography p {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#discography a {
+    color: #fff;
+    text-underline-offset: 3px;
+}
+
+#discography a:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background: #8C111B;
+    color: #fff;
+    padding: 1rem 1rem 1rem 5rem;
+    font-weight: 500;
+}
