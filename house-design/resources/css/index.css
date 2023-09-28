@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgb(0, 0, 0, 0.75), transparent), url('../images/pexels-terry-magallanes-2635038.jpg') center / cover no-repeat border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    height: 80px;
+    margin: 0 3rem;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.logo:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.navbar__item {
+    margin: 0.5rem 1rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.navbar__item:hover {
+    cursor: pointer;
+}
+
+.navbar__item::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #2E8B57;
+    width: 0;
+    transition: width 0.5s;
+}
+
+.navbar__item:hover::after {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.main h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem auto;
+    letter-spacing: 0.5rem;
+}
+
+.main p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.main__cta button {
+    margin: 0 1rem;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: 2px solid #2E8B57;
+    border-radius: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    width: 200px;
+    height: 56px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.main__cta span {
+    background-color: #2E8B57;
+    border-radius: 25px;
+    display: inline-block;
+    width: 0;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+.main__cta button:hover {
+    border: none;
+}
+
+.main__cta button:hover span {
+    width: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
